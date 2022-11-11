@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
+/* navsection */
 .navbar{
     position: absolute;
     top: 0;
@@ -12,7 +14,6 @@
     justify-content: space-between;    
 }
 .logo{
-    text-decoration: underline;
     color: rgb(252, 249, 249);
     font-weight: bold;
     padding-left: 20px ;
@@ -28,11 +29,12 @@
     align-items: center;
     font-weight: bold;
     font-size: 17px;
-    text-decoration: underline;
+    margin: 0%;
 }
 .nav-list li a{
     color: rgb(247, 248, 248);
     padding: 25px;
+    text-decoration: none;
 }
 .header{
     width: 100%;
@@ -79,21 +81,23 @@
     background:  rgb(251, 249, 249);
     color: rgb(11, 11, 11);
 }
-/* portfolio section  */
+/* about section  */
 .secondsection{
     background-color: rgb(8, 8, 8);
-    height: 580px;
+    height: fit-content;
+    padding-bottom: 20px;
+    text-align: center;
 }
 .secondfirst{
     text-align: center;
     color: rgb(252, 251, 251);
-    text-decoration: underline;
     font-weight: bold;
 }
 .final-dec{
     display: flex;
     margin-left: 10px;
     text-align: center;
+    padding-bottom: 20px;
 }
 .one{
     border: 1px solid rgb(251, 250, 250);
@@ -228,8 +232,7 @@
     left: 0;
 }
 .btn{
-    margin-left: 580px;
-    display: inline-block;
+    /* display: inline-block; */
     padding:9PX 30PX ;
     background:#f4f7f8;
     border: 2PX solid #fff;
@@ -242,23 +245,24 @@
     background:  rgb(11, 11, 11);
     color: rgb(254, 252, 252);
 }
-
 /* placesection */
 .fourthsection{
     background-color: #fff;
-    height: 600px;
+    height: fit-content;
+    padding-bottom: 20px;
 }
 .title{
     text-align: center;
     color: rgb(10, 10, 10);
-    text-decoration: underline;
     font-weight: bold;
 }
 .row{
+    text-align: center;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     width: 100%;
-    margin-left: 15px;
+    height: fit-content;
 }
 .row .col img{
     padding-top: 20px;
@@ -266,14 +270,12 @@
     height: 260px;
     transition: 0.5s;
 }
-.col p{
-    margin-bottom: 20px;
-}
 .row .col img:hover{
     height: 290px;
 }
 .btttn{
-    margin-left: 60px;
+    margin-top: 20px;
+    margin-left: 9%;
     display: inline-block;
     padding:9PX 30PX ;
     background:#0c0c0c;
@@ -286,6 +288,7 @@
     background:  rgb(253, 252, 252);
     color: rgb(8, 8, 8);
 }
+/* contactsection */
 .fifthsection{
     background-color: rgb(12, 12, 12);
     height: 550px;
@@ -293,10 +296,7 @@
 .ffirst{
     text-align: center;
     color: rgb(250, 250, 250);
-    text-decoration: underline;
     font-weight: bold;
-}
-.ffirst h1, p{
     padding-top: 10px;
 }
 .media{
@@ -324,9 +324,10 @@
     color: rgb(75, 75, 235);
 }
 .right-content{
-    width: 40%;
-    margin-left: 380px;
+    width: 50%;
+    margin-left: 25%;
     padding: 40px;
+    text-align: center;
     background: #fff;
     box-shadow: #101010;
 }
@@ -347,15 +348,9 @@
     margin: 10px 0;
     border: none;
     border-bottom: 2px solid #000;
-    outline: none;
-    resize: none;
-}
-.right-content .inputbox span{
-    position: absolute;
-    left: 0;
 }
 .cttn{
-    margin-left: 160px;
+    text-align: center;
     display: inline-block;
     padding:9PX 30PX ;
     background:#0c0c0c;
@@ -369,6 +364,7 @@
     background:  rgb(253, 252, 252);
     color: rgb(8, 8, 8);
 }
+/* footersection */
 .text-footer{
     background-color: rgb(253, 251, 251);
     text-align:center;
@@ -382,6 +378,14 @@
 @media only screen and (max-width:600px){
     .navbar{
         padding: 0;
+    }
+    .secondsection{
+        display: flex;
+        flex-direction: column;
+    }
+    .final-dec{
+        flex-direction: column;
+        margin-left: 20%;
     }
     .logo{
         position: absolute;
@@ -398,7 +402,7 @@
     .nav-list li{
         margin: 30px auto;
     }
-    /* .header{
+    .header{
         width: 100%;
         height: 200vh;
         flex-direction: column;
@@ -406,5 +410,11 @@
     }
     .header-content{
         margin: 30px auto;
-    } */
+    }
+    .fourthsection{
+        height: fit-content;
+    }
+    .row{
+        flex-direction: column;
+    }
 }
