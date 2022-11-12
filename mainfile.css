@@ -234,7 +234,8 @@
 }
 .btn{
     width: fit-content;
-    margin-left: 35%;
+    text-align: center;
+    /* margin-left: 35%; */
     padding:9PX 30PX ;
     background:#f4f7f8;
     border: 2PX solid #fff;
@@ -383,6 +384,7 @@
 @media only screen and (max-width:600px){
     .navbar{
         padding: 0;
+        position: static;
     }
     .secondsection{
         display: flex;
@@ -416,10 +418,16 @@
     .header-content{
         margin: 30px auto;
     }
+    .line{
+        width: fit-content;
+    }
     .fourthsection{
         height: fit-content;
     }
     .row{
         flex-direction: column;
+    }
+    .btn{
+        margin-left: 35%;
     }
 }
